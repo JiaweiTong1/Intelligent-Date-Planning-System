@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datemate"
+version = "0.1.0"
+description = "DateMate AI - Multi-Agent Date Planning System built with Google ADK"
+authors = [
+    { name = "DateMate AI", email = "example@example.com" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "google-adk>=0.5.0",
+    "google-cloud-aiplatform>=1.38.0",
+    "streamlit>=1.28.0",
+    "googlemaps>=4.10.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.4.0",
+    "python-dateutil>=2.8.2",
+    "rich>=13.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.urls]
+Homepage = "https://example.com"
+
